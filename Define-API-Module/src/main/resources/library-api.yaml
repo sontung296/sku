@@ -1,0 +1,55 @@
+openapi: 3.0.0
+info:
+  title: Employee API Specification for account operations
+  description: |-
+    A simple employee API that allows one operations:
+    - get all employee
+  version: 1.0-SNAPSHOT
+servers:
+  - url: http://localhost:8091
+  - url: http://something.something
+tags:
+  - name: Employee
+    description: Operations get Employee from database
+paths:
+  /randomEmployee:
+    get:
+      summary: Get randomly employee
+      description: Get all employee from database
+      tags:
+        -  "Employees"
+      operationId: getAllEmployees
+      parameters:
+        - in: query
+          name: departmentId
+          description: The first parameter
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Authorization
+          description: The API key for authentication
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Employee'
+components:
+  schemas:
+    Employee:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Employee ID
+        name:
+          type: string
+        departmentId:
+          type: string

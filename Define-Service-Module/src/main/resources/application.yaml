@@ -1,0 +1,38 @@
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force-response: true
+  port: ${PORT:8091}
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: "/swagger-ui.html"
+  api-docs:
+    path:  "/v3/api-docs"
+    enabled: true
+
+spring:
+  application:
+    name: module-one
+  output:
+    ansi:
+      enabled: always
+  main:
+    banner-mode: "off"
+  datasource:
+    username: "root"
+    password: "123456a@"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    url: "jdbc:mysql://localhost:3306/testDB"
+  jpa:
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQLDialect"
+client:
+  server-one:
+    base-url: "http://localhost:8092"
+  server-two:
+    base-url: "http://localhost:8093"
