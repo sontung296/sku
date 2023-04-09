@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 import static org.apache.commons.lang3.StringUtils.EMPTY;
-
 @RestController
 @RequestMapping("/api/v3")
 public class OpenApiController implements RandomEmployeeApi {
+
     /**
      * @param departmentId
      * @param authorization
@@ -35,5 +35,6 @@ public class OpenApiController implements RandomEmployeeApi {
 
         return departmentId.equals(EMPTY) ? ResponseEntity.badRequest().build() : ResponseEntity.ok(List.of(employee1, employee2, employee3));
     }
+
 
 }
