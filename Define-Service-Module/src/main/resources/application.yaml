@@ -46,6 +46,16 @@ management:
       show-details: always
 #-------------------------------------------------------
 
+# Config for aws collection-----------------------------
+S3:
+  base-url: "http://localhost:4566"
+  region: "us-east-1"
+  secret-key: "KKKKXKKKKXKKKKKKKKKXKKKXKKKKXKKKKXKKKKKKK"
+  access-key: "AAAAAAAAAAAAAAAAAAAA"
+
+
+#-------------------------------------------------------
+
 # Config for http interface-----------------------------
 client:
   server-one:

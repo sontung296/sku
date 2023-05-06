@@ -1,4 +1,4 @@
-package com.base.service.client;
+package com.base.service.controller.client;
 
 import com.base.service.model.Book;
 import org.springframework.http.MediaType;

@@ -1,6 +1,6 @@
 package com.base.service.controller;
 
-import com.base.service.client.ClientServerTwo;
+import com.base.service.controller.client.ClientServerTwo;
 import com.base.service.model.Book;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
