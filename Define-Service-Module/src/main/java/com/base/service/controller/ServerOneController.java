@@ -1,7 +1,7 @@
 package com.base.service.controller;
 
 
-import com.base.service.client.ClientServerOne;
+import com.base.service.controller.client.ClientServerOne;
 import com.base.service.model.Book;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

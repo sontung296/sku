@@ -1,8 +1,8 @@
 package com.base.service._config;
 
 
-import com.base.service.client.ClientServerOne;
-import com.base.service.client.ClientServerTwo;
+import com.base.service.controller.client.ClientServerOne;
+import com.base.service.controller.client.ClientServerTwo;
 import com.base.service.exception.ClientExceptionHandler;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
